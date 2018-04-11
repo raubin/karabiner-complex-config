@@ -1,0 +1,26 @@
+{
+  "title": "Change caps_lock key",
+  "rules": [
+    {
+      "description": "Change caps_lock key to act as function (fn) key.",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "fn",
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
