@@ -8,24 +8,36 @@
   <div class="container">
     <h1>Karabiner Rule Import</h1>
 
-    <div class="card">
-      <div class="card-header">
-        No stretch mods
-      </div>
+    <p>Use the <code>import</code> buttons to open the Karabiner app for importing rules.</p>
+
+    <div class="card mb-3">
+      <h4 class="card-header">No stretch mods</h4>
       <div class="card-body">
-        <h5 class="card-title">Utilizes fn as a modifier</h5>
-        <p class="card-text">Includes modifications that prevent the usual stretches for things like:</p>
+        <h5 class="card-title">Uses <code>fn</code> as a modifier</h5>
+        <p class="card-text">Includes modifications that prevent the usual stretches for the following keys:</p>
         <ul>
           <li>backspace</li>
           <li>escape</li>
           <li>arrow keys (uses vim mappings)</li>
           <li>grave (accent)</li>
         </ul>
-        <p class="card-text">Works well when `fn` key is remapped to the
-        `caps_lock` key, since function is usually a stretch by default.</p>
+        <p class="card-text">Works well when <code>fn</code> key is remapped to the
+        <code>caps_lock</code> key, since function is usually a stretch by default.</p>
         <a class="btn btn-outline-secondary" href="karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fraw.githubusercontent.com%2Fraubin%2Fkarabiner-complex-config%2Fmaster%2Fmodifications%2Fstop_stretching.json">import</a>
       </div>
     </div>
+
+    <div class="card mb-3">
+      <h4 class="card-header">Move <code>fn</code> key</h4>
+      <div class="card-body">
+        <h5 class="card-title">Move <code>fn</code> to replace <code>caps_lock</code> key</h5>
+        <p class="card-text">A common mod is to move the control key to where
+        the caps lock key is, but moving the function key instead allows us to
+        remap other keys without altering shortcuts that use the control key.</p>
+        <a class="btn btn-outline-secondary" href="karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fraw.githubusercontent.com%2Fraubin%2Fkarabiner-complex-config%2Fmaster%2Fmodifications%2Fcaps_lock_fn.json">import</a>
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
