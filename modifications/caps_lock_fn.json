@@ -1,5 +1,5 @@
 {
-  "title": "Change caps_lock key",
+  "title": "Change caps_lock key to act as fn key",
   "rules": [
     {
       "description": "Change caps_lock key to act as function (fn) key.",
