@@ -2,6 +2,54 @@
   "title": "Stop stretching - modifications that work well with the fn to caps_lock key swap",
   "rules": [
     {
+      "description": "Fn+i = esc (saves a stetch to esc key)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "escape"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Fn+p = grave/accent (saves a stretch key)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": [
+                "fn"
+              ],
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "grave_accent_and_tilde"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Fn+space = delete (saves a stetch to delete key)",
       "manipulators": [
         {
