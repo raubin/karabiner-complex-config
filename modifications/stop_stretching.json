@@ -1,5 +1,5 @@
 {
-  "title": "Stop stretching - modificaitons that work well with the fn to caps_lock key swap",
+  "title": "Stop stretching - modifications that work well with the fn to caps_lock key swap",
   "rules": [
     {
       "description": "Fn+space = delete (saves a stetch to delete key)",
