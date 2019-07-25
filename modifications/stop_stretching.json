@@ -2,7 +2,7 @@
   "title": "Stop stretching - modifications that work well with the fn to caps_lock key swap",
   "rules": [
     {
-      "description": "Fn+i = esc (saves a stetch to esc key)",
+      "description": "Fn+i = esc (saves a stretch to esc key)",
       "manipulators": [
         {
           "type": "basic",
