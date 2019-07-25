@@ -1,0 +1,26 @@
+{
+    "title": "Change tab key to act as ctrl key, when held",
+    "rules": [
+      {
+        "description": "Change tab key to act as ctrl key, when held.",
+        "manipulators": [
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "tab",
+              "modifiers": {
+                "optional": [
+                  "any"
+                ]
+              }
+            },
+            "to_if_held_down": [
+              {
+                "key_code": "left_control"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
