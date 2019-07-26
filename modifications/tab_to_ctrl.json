@@ -1,5 +1,5 @@
 {
-    "title": "Change tab key to act as ctrl key, when held",
+    "title": "Tab Key overrides",
     "rules": [
       {
         "description": "Change tab key to act as ctrl key, when held.",
@@ -16,7 +16,35 @@
             },
             "to_if_held_down": [
               {
-                "key_code": "left_control"
+                "key_code": "left_control",
+                "modifiers": [
+                    ""
+                ]
+              }
+            ],
+            "conditions": [
+                {
+                  "type": "variable_unless",
+                  "name": "left_gui pressed",
+                  "value": 1
+                }
+            ]
+          },
+          {
+            "type": "basic",
+            "from": {
+              "key_code": "left_gui",
+              "modifiers": "any"
+            },
+            "to": [
+              {
+                "set_variable": {
+                  "name": "left_gui pressed",
+                  "value": 1
+                }
+              },
+              {
+                "key_code": "left_gui"
               }
             ]
           }
